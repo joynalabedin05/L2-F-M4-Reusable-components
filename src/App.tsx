@@ -1,36 +1,43 @@
 // import MainLayout from "./components/layouts/MainLayout"
 
-import { useState } from "react"
-import Button from "./components/ui/Button"
+// import { useState } from "react"
+// import Button from "./components/ui/Button"
 import Container from "./components/ui/Container"
-import Modal from "./components/ui/Modal";
+// import Modal from "./components/ui/Modal";
+import NormalForm from "./components/normalForm/NormalForm";
 
 function App() {
-  const [modal, setModal] = useState(false);
+  // const [modal, setModal] = useState(false);
 
-  const handleModalClose = ()=>{
-    setModal((pre)=>!pre);
-  }
+  // const handleModalClose = ()=>{
+  //   setModal((pre)=>!pre);
+  // }
   
   return (
     <div>
       <Container>
         {/* <h1>react reusable cimponents</h1> */}
         {/* <MainLayout></MainLayout> */}
-        <div className=" h-screen w-full flex justify-center items-center">
+        {/* <div className=" h-screen w-full flex justify-center items-center"> */}
         {/* <h1>react reusable components</h1>
           <button className="btn btn-primary">This is btn</button>
           <button className="btn btn-danger">This is btn2</button> */}
           {/* <Button className='bg-slate-400' Outline={false}></Button> */}
-          <Button onClick={()=>setModal((pre)=>!pre)} variant='ghost'>open modal</Button>
-          <Modal isOpen={modal} onClose={handleModalClose}>
+          {/* <Button onClick={()=>setModal((pre)=>!pre)} variant='ghost'>open modal</Button> */}
+          {/* <Modal isOpen={modal} onClose={handleModalClose}>
             <Modal.Header> 
               <h1>this is modal title</h1>
               <Modal.CloseButton></Modal.CloseButton>
             </Modal.Header>          
             <p>this is modal content</p>
-          </Modal>
-        </div>
+          </Modal> */}
+        {/* </div> */}
+
+        {/* module-5 normal form */}
+
+          <NormalForm></NormalForm>
+
+
       </Container>
     </div>
   )
