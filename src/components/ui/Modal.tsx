@@ -10,7 +10,7 @@ type TModalContext = {
 type TModal ={
     isOpen: boolean;
     onClose: ()=>void;
-    children: ReactNode;
+    children?: ReactNode;
 }
 
 type TCloseButton = {
